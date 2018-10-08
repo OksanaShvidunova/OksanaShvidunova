@@ -13,7 +13,108 @@
          Vivamus ac massa ut velit molestie hendrerit. Aliquam varius est lacinia, sodales ex nec, vehicula leo. Praesent hendrerit quam eget sem condimentum, at tristique ante ornare. Donec porttitor vehicula rhoncus. Integer vitae velit lacus. Proin tempus scelerisque dui at facilisis. Nullam accumsan est eget tortor vulputate aliquet. Sed et felis ultrices, dapibus mauris eu, scelerisque ex. In sagittis dolor eu eros pharetra, sit amet lacinia lectus ultricies. Donec quis dignissim eros. Nam dignissim laoreet nisl. In at euismod velit, at porttitor sem. Etiam vel lorem ac justo finibus lobortis. Ut at velit ac augue condimentum finibus sit amet at lorem. Sed in dolor non mi elementum lacinia sit amet in diam. Integer sit amet purus ac turpis tincidunt tincidunt vel quis ligula.
          Quisque at lorem ut magna laoreet feugiat quis ac neque. Cras hendrerit justo eget neque tempor, nec aliquam nulla aliquam. Etiam vitae lorem et tellus venenatis maximus. Sed vel quam nec felis porta volutpat. Integer ornare nec arcu vitae posuere. Cras sit amet tortor facilisis, gravida augue sed, accumsan urna. In sapien dolor, gravida nec tempus vitae, sollicitudin non massa. Nulla quis felis non odio semper lacinia ut vitae arcu.
          Mauris at est vel justo tristique consectetur. Ut convallis velit vel magna imperdiet, nec molestie neque sollicitudin. Phasellus ut metus interdum neque vulputate pharetra. Suspendisse potenti. In vel diam finibus, aliquet mauris eget, suscipit felis. Praesent lobortis quis nisl vel molestie. Suspendisse potenti. Nulla nec urna vitae felis pulvinar mattis quis a mi.
-         Vestibulum vel sem erat. Mauris sollicitudin massa diam, et bibendum mauris pulvinar eu. Suspendisse at elementum lacus. Nunc eget ipsum vitae lorem hendrerit feugiat. Donec sit amet tristique risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus convallis suscipit.
+         Vestibulum vel s .Click this field and select the required method to define the player's playback setting on desktops according to the following options:
+
+Autoplay - Selecting this option will cause the player to playback a pre-roll (if ads are defined) and its content videos automatically upon loading the player.
+Autoplay when in view - Selecting this option will cause the player to playback a pre-roll (if ads are defined) and its content videos automatically when the player is displayed in the browser view port.
+Autoplay ad only - Selecting this option will cause the player to playback a pre-roll only (if ads are defined), and wait for the viewer's interaction with the player to continue playing any content videos. 
+Mouseover - Selecting this option will cause the player to playback a pre-roll (if ads are defined) and it's content videos only when the mouse cursor is located within the player size area. 
+Click - Selecting this option will cause the player to playback a pre-roll (if ads are defined) and its content videos only after the viewer has clicked on the player
+
+Note: If using a player tag type containing an iframe, autoplay when-in-view will not work. For autoplay-in-view to work successfully, the player must be directly embedded into the page.
+ 
+MOBILE START	
+Click this field and select the required method to define the player's playback setting on mobile devices according to the following options:
+
+Same as desktop - Selecting this option will apply your desktop playback settings for mobile devices (this is the default setting).
+Autoplay (Muted) - Selecting this option will cause the player to playback a pre-roll (if ads are defined) and it's content videos automatically upon loading the player on mobile devices but without any sound.
+Autoplay when in view - Selecting this option will cause the player to playback a pre-roll (if ads are defined) and it's content videos automatically when the player is displayed in the browser view port on mobile devices but without any sound.
+Autoplay ad only (Muted) - Selecting this option will cause the player to playback a pre-roll only (if ads are defined) on mobile devices but without any sound. After the muted ad has played the player will wait for the viewer's interaction to start the playback of any content videos. 
+Click - Selecting this option will cause the player to playback a pre-roll (if ads are defined) and its content videos only after the viewer has clicked on the player. This option is not muted and will also provide any ad/content video sound.
+Note: For further details, please see Mobile Muted Autoplay Options. 
+
+Note: If using a player tag type containing an iframe, autoplay when-in-view will not work. For autoplay-in-view to work successfully, the player must be directly embedded into the page.
+
+START WHEN PLAYER VISIBILITY CROSSES	
+This field is used to apply an additional viewability condition to the 'Autoplay when in view' option selected in the previous 'DESKTOP START' and/or 'MOBILE START' fields. For example: If the player is located at the bottom of a web page, and requires the viewer to scroll down to view it, this field can be used to define how much of the player needs to be in view to trigger the autostart option.
+
+Note: This field is an additional condition that is applied to the player if the previous 'DESKTOP START' and/or 'MOBILE START' fields are set to 'Autoplay when in view'.
+
+Click and drag the value slider or click up/down on the arrow buttons to set a value from 1% to 50% to define how much of the player must be displayed in the browser viewport to start the automatic playback.
+
+Note: By default, this field is set to 20%.
+
+PAUSE WHEN OUT OF VIEW	
+This field is used to control if the playback will pause or continue when the player is no longer in view in the browser view port. For example: If your player has been set to autostart when 40% of the player is displayed in the in the browser view port, and the viewer has scrolled away from the player again, you can set the player to pause when less than 40% of it is in view.
+
+Click on this field and apply the required option from the drop down list according to the following options:
+
+Always - Selecting this option will pause the player from continuing its playback if the player is completely no longer in-view of the browser view port.
+
+Note: If the previous 'DESKTOP START' and/or 'MOBILE START' fields are set to 'Autoplay when in view', the player will pause from continuing its playback if the player is no longer in-view according to the percent defined in the 'START WHEN PLAYER VISIBILITY CROSSES' field.
+
+If still muted - Selecting this option will pause the player from continuing it's playback only if the volume on the player has been set to zero (0) or muted.
+Never (Default) - Selecting this option will allow the player to continue it's playback even if the player is no longer in view of the browser view port.
+MOBILE AUTOPLAY ON WIFI ONLY	
+Selecting this slider will allow the player to automatically start ad/video playback on mobile devices only when the device is connected to the internet using a WiFi connection.
+
+Note: This option will only apply if the 'MOBILE START' has been set to any type of Autoplay or 'Same as desktop'.
+
+Note: For further details, please see Mobile Muted Autoplay Options.
+
+LIGHTBOX ON CLICK (DESKTOP ONLY)	
+Selecting this slider will allow the player to automatically open in the lightbox mode on desktop if a viewer clicks anywhere in the video area.
+
+FULLSCREEN ON  FIRST UNMUTE / FULLSCREEN ON START (MOBILE ONLY)	
+Selecting this slider will allow the player to automatically switch to fullscreen mode if a viewer un-mutes a player on a mobile device for the first time.
+
+Note: If the previous 'MOBILE START' field is set to 'Click', the player will switch to fullscreen mode if a viewer clicks on it to start the playback.
+
+Note: For further details, please see Mobile Muted Autoplay Options. 
+
+SOUND	
+Use this field to define the sound behavior of the player. Click this field and select the required option from the drop down menu according to the following options:
+
+Muted - When the player begins its playback the sound of the content video and ads (if defined) will be muted.
+Normal - When the player begins its playback the sound of the content video and ads (if defined) will be 100% (full volume) or in accordance with the definition set in the 'Initial volume' field (see below).
+Mouseover - When the player begins its playback the sound of the content video and ads (if defined) will only be heard if the mouse cursor is located within the player window. After the initial placement of the cursor within the player video, the volume will remain active.
+Mouseover/off - When the player begins its playback the sound of the content video and ads (if defined) will only be heard if the mouse cursor is located within the player window. Each time the mouse cursor is placed outside the player window, the sound will revert back to muted mode.
+Note: This field will not affect Mobile playback as it only supports muted players.
+
+INITIAL VOLUME	Click and drag the value slider or enter a value from 0.0 to 1.0 to define the Player's initial load volume. 0=Muted, 1=Maximum volume.
+VIDEOS TO PLAY	
+This field defines how many content videos will be shown consecutively until the player stops for viewer interaction. Enter the maximum number of videos that will be played back until the player stops.
+
+Note: The purpose of this field is to prevent the player from going through an endless playlist if the viewer forgets to stop.
+
+VIDEOS TO REQUEST	
+This field is used to limit the number of content videos that will playback in the player.
+
+Click and drag the value slider or enter a number between 1 to 50 to define how many content videos you would like the player to playback from the assigned playlist.
+
+For example: If you have assigned this player a playlist that contains 10 videos, by entering 3 in this field, this will limit the number of videos shown in this player to the first 3 videos from that playlist.
+
+Important: When a Carousel is applied to the player, the number of videos displayed in the Carousel is also controlled by this field. It is recommended to set this field to 20+ if you are using a related Carousel.
+
+Note: the default of this field is 1 video. If you have an assigned playlist with more than one video make sure to modify the setting of this field accordingly.
+
+AUTO-RESOLUTION TOP LIMIT	
+This field is used to limit the player from loading high-resolution video segments when streaming with adaptive bitrate.
+
+For example: You can limit the player to a maximum quality if 480p video if you know that the internet connection is slow and you want to prevent player buffering time that will affect your viewers' experience.
+
+Click on this field and select the maximum resolution limit from the drop down list according to the following options:
+
+Unlimited - The player can load 1080p or higher resolution files when serving an adaptive bitrate video.
+720p - The player can load resolution files up to 720p when serving an adaptive bitrate video.
+540p - The player can load resolution files up to 540p when serving an adaptive bitrate video.
+480p - The player can load resolution files up to 480p when serving an adaptive bitrate video.
+360p - The player can load resolution files up to 360p when serving an adaptive bitrate video.
+240p - The player can load resolution files up to 240p when serving an adaptive bitrate video.
+RANDOMIZE VIDEOS	
+Selecting this slider will play the assigned playlist videos in a shuffled order.
+
+Note: This option only randomizes the number of videos defined by the 'Videos to request' field. For example: If your playlist has 10 videos and the 'Videos to request' field is set to 5, then only the first 5 videos will be randomized and not the entire playlist.em erat. Mauris sollicitudin massa diam, et bibendum mauris pulvinar eu. Suspendisse at elementum lacus. Nunc eget ipsum vitae lorem hendrerit feugiat. Donec sit amet tristique risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus convallis suscipit.
          Etiam cursus justo sed sapien sodales egestas. Nam aliquet ultricies sollicitudin. Aliquam sed pellentesque ante, at laoreet quam. Nulla interdum fermentum suscipit. Cras mollis nisl id turpis sodales, porta tincidunt neque iaculis. Phasellus tincidunt nisi sed libero vestibulum, in volutpat dolor convallis. Suspendisse vel nulla ac velit iaculis placerat in ut sem. Maecenas nec feugiat libero. Pellentesque malesuada eu ante sit amet congue.
          Sed interdum congue The player size tab defines the overall size of the player with all its components.
 When defining the player size, you should take into account any additional components you would like to incorporate into your player such as: Carousels, Foreground images etc.
